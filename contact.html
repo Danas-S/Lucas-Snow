@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333333;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: #111111;
-        }
-        </style>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Lucas Snow</title>
 </head>
 <body>
     <header>
-        <h1>Contact Lucas Snow</h1>
+        <div class="main-header">
+          <h1 class="header-title">
+            <span class="title-icon">
+              <i class="fa-solid fa-person-snowboarding"></i>
+            </span>
+            <span class="title-text">Lucas Snow's Adventure!</span>
+          </h1>
+          <div class="links-wrapper">
+            <div class="phone-number">
+              <span class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <a href="tel:8109750300">810-975-0300</a>
+            </div>
+            <div class="contact-us">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="search-panel">
+              <span class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <form action="#">
+                <input type="text" placeholder="Search">
+              </form>
+            </div>
+          </div>
+        </div> 
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <section>
         <h2>Get in Touch</h2>
         <p>Have questions or want to join me on my next snowboarding adventure? Fill out the form below and I’ll get back to you!</p>
 
-        <form action="submit_form.php" method="POST">
+        <form action="#" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
 

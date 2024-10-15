@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333333;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: #111111;
-        }
-</style>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Snow - Snowboarding Adventures</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Lucas Snow's Adventure!</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="main-header">
+        <h1 class="header-title">
+          <div class="header-title-wrapper">
+            <span class="title-icon">
+              <i class="fa-solid fa-person-snowboarding"></i>
+            </span>
+            <span class="title-text"><span class="title-capital">L</span>ucas Snow's Adventure!</span>
+          </div>
+        </h1>
+        <div class="links-wrapper">
+          <div class="phone-number">
+            <span class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <a href="tel:8109750300">810-975-0300</a>
+          </div>
+          <div class="contact-us">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="search-panel">
+            <span class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <form action="#">
+              <input type="text" placeholder="Search">
+            </form>
+          </div>
+        </div>
+      </div> 
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
-        <h2>Explore Exciting Destinations</h2>
-        <p>Join Lucas as he shreds through the most exhilarating snowboarding trails around the globe!</p>
-        <img src="c:\.Web_Dev_TUD\photos\snowboarding.jpg" width="600"
-        height="400" alt="Snowboarding Adventure">
-        <p>Photo by Jane Doe on Unsplash</p>
+    <section class="Slider">
+      <div class="text-wrapper">
+        <h2 class="section-title">Explore Exciting Destinations</h2>
+        <p class="slider-text">Join Lucas as he shreds through the most exhilarating snowboarding trails around the globe!</p>
+        <p class="slider-small-text">Photo by Jane Doe on Unsplash</p>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Lucas Snow's Adventures. All rights reserved.</p>
+      <div class="footer-wrapper">
+        <h1 class="header-title">
+          <span class="title-icon">
+            <i class="fa-solid fa-person-snowboarding"></i>
+          </span>
+          <div class="title-text">
+            <span>Lucas</span>
+            <span>Snow's</span>
+            <span>Adventure!</span>
+          </div>
+        </h1>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="links-wrapper">
+          <div class="phone-number">
+            <span class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <a href="tel:8109750300">810-975-0300</a>
+          </div>
+          <div class="contact-us">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="search-panel">
+            <span class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <form action="#">
+              <input type="text" placeholder="Search">
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2024 Lucas Snow's Adventures. All rights reserved.</p>
     </footer>
+    <script src="https://kit.fontawesome.com/3abb6957ff.js" crossorigin="anonymous"></script>
 </body>
 </html>
