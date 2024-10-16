@@ -2,72 +2,119 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Lucas Snow</title>
 </head>
 <body>
-    <header>
-        <div class="main-header">
-          <h1 class="header-title">
-            <span class="title-icon">
-              <i class="fa-solid fa-person-snowboarding"></i>
-            </span>
-            <span class="title-text">Lucas Snow's Adventure!</span>
-          </h1>
-          <div class="links-wrapper">
-            <div class="phone-number">
-              <span class="icon">
-                <i class="fa-solid fa-phone"></i>
-              </span>
-              <a href="tel:8109750300">810-975-0300</a>
-            </div>
-            <div class="contact-us">
-              <span class="icon">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <a href="contact.html">Contact Us</a>
-            </div>
-            <div class="search-panel">
-              <span class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
-              <form action="#">
-                <input type="text" placeholder="Search">
-              </form>
-            </div>
-          </div>
-        </div> 
-        <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <div class="main-header">
+      <h1 class="header-title">
+        <div class="header-title-wrapper">
+          <span class="title-icon">
+            <i class="fa-solid fa-person-snowboarding"></i>
+          </span>
+          <span class="title-text"><span class="title-capital">L</span>ucas Snow's Adventure!</span>
+        </div>
+      </h1>
+      <div class="links-wrapper">
+        <div class="phone-number">
+          <span class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+          <a href="tel:8109750300">810-975-0300</a>
+        </div>
+        <div class="contact-us">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-panel">
+          <span class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <form action="#">
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+      </div>
+    </div> 
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Have questions or want to join me on my next snowboarding adventure? Fill out the form below and I’ll get back to you!</p>
+  <section class="Contact">
+    <div class="text-wrapper">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-text">Have questions or want to join me on my next snowboarding adventure? Fill out the form and I’ll get back to you!</p>     
+    </div>
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <label class="contact-label" for="name">Name:</label>
+        <input class="contact-input" type="text" id="name" name="name" required>
 
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+        <label class="contact-label" for="email">Email:</label>
+        <input class="contact-input" type="email" id="email" name="email" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+        <label class="contact-label" for="message">Your Message:</label>
+        <textarea class="contact-textarea" id="message" name="message" rows="5" required></textarea>
 
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br>
+        <input class="contact-button" type="submit" value="Send">
+    </form>
+    </div>
+  </section>
 
-            <input type="submit" value="Send">
-        </form>
-    </section>
-
-
-    <footer>
-        <p>&copy; 2024 Lucas Snow's Adventures. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="footer-wrapper">
+      <h1 class="header-title">
+        <span class="title-icon">
+          <i class="fa-solid fa-person-snowboarding"></i>
+        </span>
+        <div class="title-text">
+          <span>Lucas</span>
+          <span>Snow's</span>
+          <span>Adventure!</span>
+        </div>
+      </h1>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="links-wrapper">
+        <div class="phone-number">
+          <span class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+          <a href="tel:8109750300">810-975-0300</a>
+        </div>
+        <div class="contact-us">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-panel">
+          <span class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <form action="#">
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2024 Lucas Snow's Adventures. All rights reserved.</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/3abb6957ff.js" crossorigin="anonymous"></script>
 </body>
 </html>
