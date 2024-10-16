@@ -38,7 +38,13 @@ footer .header-title {
   position: relative;
 }
 .main-header .header-title .title-text .title-capital {
-  font-size: 30px;
+  font-size: 28px;
+}
+.main-header .header-title .title-text .title-capital-b {
+  font-size: 25px;
+}
+.main-header .header-title .title-text .title-capital-c {
+  font-size: 22px;
 }
 .main-header .links-wrapper {
   width: 60%;
