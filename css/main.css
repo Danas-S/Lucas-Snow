@@ -207,20 +207,6 @@ footer .contact-us .icon {
 .main-header .header-title-wrapper .title-icon i {
   font-size: 25px;
 }
-.hover-popup {
-  display: none;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0,0.9);
-  z-index: 0;
-}
-.hover-popup.show {
-  display: flex;
-}
 /* Keyframes */
 
 @keyframes Snowboarding {
@@ -346,6 +332,20 @@ footer .links-wrapper {
 /* Responsive - Tablet */
 @media screen and (max-width:1024px) {
   .mobile-header {
+    display: flex;
+  }
+  .hover-popup {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    z-index: 0;
+  }
+  .hover-popup.show {
     display: flex;
   }
   header {
