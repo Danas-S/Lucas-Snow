@@ -8,6 +8,19 @@
     <title>Lucas Snow - Snowboarding Adventures</title>
 </head>
 <body>
+  <div class="mobile-header">
+    <div class="mobile-logo">
+      <div class="mobile-logo-text">
+        <span>Lucas</span>
+        <span>Snow's</span>
+        <span>Adventure!</span>
+      </div>
+      <i class="fa-solid fa-person-snowboarding"></i>
+    </div>
+    <div class="mobile-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
   <header>
     <div class="main-header">
       <h1 class="header-title">
@@ -35,26 +48,24 @@
           <span class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <form action="#">
-            <input type="text" placeholder="Search">
-          </form>
+          <div class="text">Search</div>
         </div>
       </div>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </div> 
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section class="Slider">
     <div class="text-wrapper">
       <h2 class="section-title">Explore Exciting Destinations</h2>
-      <p class="slider-text">Join Lucas as he shreds through the most exhilarating snowboarding trails around the globe!</p>
-      <p class="slider-small-text">Photo by Jane Doe on Unsplash</p>
+      <p class="section-text">Join Lucas as he shreds through the most exhilarating snowboarding trails around the globe!</p>
+      <p class="section-small-text">Photo by Jane Doe on Unsplash</p>
     </div>
   </section>
 
@@ -94,14 +105,21 @@
           <span class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <form action="#">
-            <input type="text" placeholder="Search">
-          </form>
+          <div class="text">Search</div>
         </div>
       </div>
     </div>
     <p class="copyright">&copy; 2024 Lucas Snow's Adventures. All rights reserved.</p>
   </footer>
+  <form action="#" class="search-popup">
+    <div class="search-popup-close">
+      <i class="fa-solid fa-x"></i>
+    </div>
+    <h3 class="search-popup-title">Explore & Discover</h3>
+    <input class="search-popup-input" type="text" placeholder="Search">
+  </form>
+  <div class="hover-popup"></div>
+  <script src="js/scripts.js" async></script>
   <script src="https://kit.fontawesome.com/3abb6957ff.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -21,15 +21,49 @@ section.About .section-title {
   color: #fff;
   text-shadow: 0 5px 3px #000;
 }
-section.About .slider-text {
+section.About .section-text {
   max-width: 45%;
   margin-top: 15px;
   color: #fff;
   text-shadow: 0 5px 3px #000;
 }
-section.About .slider-small-text {
+section.About .section-small-text {
   color: #000;
   margin: auto 5px 0 auto;
   font-size: 16px;
   text-shadow: 0 5px 3px #fff;
+}
+@media screen and (max-width: 1024px) {
+  /* About section */
+  section.About {
+    min-height: 70vh;
+  }
+  section.About .text-wrapper {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  section.About .text-wrapper .section-title {
+    font-size: 30px;
+    max-width: 60%;
+  }
+  section.About .text-wrapper .section-text {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* About section */
+  section.About {
+    background-position: 25%;
+    min-height: 50vh;
+  }
+  section.About .text-wrapper .section-title {
+    margin-top: 0;
+    font-size: 25px;
+    max-width: 80%;
+  }
+  section.About .text-wrapper .section-text {
+    font-size: 16px;
+    max-width: 80%;
+  }
 }

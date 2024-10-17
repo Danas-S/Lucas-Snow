@@ -20,14 +20,50 @@ section.Slider .section-title {
   color: #fff;
   text-shadow: 0 5px 3px #000;
 }
-section.Slider .slider-text {
+section.Slider .section-text {
   margin-top: 15px;
   color: #fff;
   text-shadow: 0 5px 3px #000;
 }
-section.Slider .slider-small-text {
+section.Slider .section-small-text {
   color: #000;
   margin: auto 5px 0 auto;
   font-size: 16px;
   text-shadow: 0 5px 3px #fff;
+}
+@media screen and (max-width: 1024px) {
+  /* Slider section */
+  section.Slider {
+    background-position: 25%;
+    min-height: 70vh;
+  }
+  section.Slider .text-wrapper {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  section.Slider .text-wrapper .section-title {
+    font-size: 30px;
+  }
+  section.Slider .text-wrapper .section-text {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* Slider section */
+  section.Slider {
+    background-position: 25%;
+    min-height: 50vh;
+  }
+  section.Slider .text-wrapper {
+    max-width: 100%;
+  }
+  section.Slider .text-wrapper .section-title {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  section.Slider .text-wrapper .section-text {
+    margin-top: 45%;
+    font-size: 16px;
+  }
 }
