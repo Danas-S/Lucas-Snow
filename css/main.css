@@ -113,10 +113,6 @@ footer .search-panel .icon {
   left: 0;
   transform: translate(0%, -50%);
 }
-.main-header .search-panel .text,
-footer .search-panel .text {
-  margin-left: 15px;
-}
 .main-header .search-panel input,
 footer .search-panel input {
   border: none;
@@ -126,10 +122,17 @@ footer .search-panel input {
 }
 .main-header .phone-number a,
 .main-header .contact-us a,
+.main-header .search-panel .text,
 footer .phone-number a, 
-footer .contact-us a {
+footer .contact-us a,
+footer .search-panel .text {
   margin-left: 5px;
   text-decoration: none;
+  transition: 0.2s;
+}
+.main-header .search-panel .text,
+footer .search-panel .text {
+  margin-left: 10px;
 }
 header nav {
   margin-top: 20px;
@@ -160,9 +163,11 @@ header nav > ul li .nav-link:first-child {
 .main-header .phone-number a:hover,
 .main-header .contact-us a:hover,
 header nav > ul li .nav-link:hover,
+.main-header .search-panel:hover .text,
 footer .phone-number a:hover,
 footer .contact-us a:hover,
-footer nav > ul li a:hover {
+footer nav > ul li a:hover,
+footer .search-panel:hover .text {
   opacity: 0.6;
 }
 header nav > ul li .nav-link.active {
