@@ -205,7 +205,7 @@ footer .contact-us .icon {
   top: -22%;
   transform: translate(0%, -20%);
   transform: rotate(-15deg) translate(100%, 15%); 
-  left: 82%;
+  left: 77%;
   animation-name: Snowboarding;
   animation-duration: 4s;
 }
@@ -221,7 +221,7 @@ footer .contact-us .icon {
   }
   100% {  
     transform: rotate(-15deg) translate(100%, 15%); 
-    left: 82%;
+    left: 77%;
   }
 }
 
