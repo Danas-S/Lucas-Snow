@@ -1,0 +1,69 @@
+/* Section Slider */
+section.Trips {
+    padding: 10px;
+    background: url('"C:\.Web_Dev_TUD\web_site\WebDev_Project_SDRTUD-main\WebDev_Project_SDRTUD-main\img\ski_resort.jpg"') no-repeat;
+    background-size: cover;
+    background-position: 20% 74%;
+    min-height: 80vh;
+    display: flex;
+  } 
+  section.Trips .text-wrapper {
+    width: 100%;
+    margin: 3% 0 0 10%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.Trips .section-title {
+    max-width: 55%;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #fff;
+    text-shadow: 0 5px 3px #000;
+  }
+  section.Trips .section-text {
+    max-width: 45%;
+    margin-top: 15px;
+    color: #fff;
+    text-shadow: 0 5px 3px #000;
+  }
+  section.Trips .section-small-text {
+    color: #000;
+    margin: auto 5px 0 auto;
+    font-size: 16px;
+    text-shadow: 0 5px 3px #fff;
+  }
+  @media screen and (max-width: 1024px) {
+    /* About section */
+    section.Trips {
+      min-height: 70vh;
+    }
+    section.Trips .text-wrapper {
+      max-width: 100%;
+      margin-right: 20px;
+    }
+    section.Trips .text-wrapper .section-title {
+      font-size: 30px;
+      max-width: 60%;
+    }
+    section.Trips .text-wrapper .section-text {
+      margin-top: 30px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    /* About section */
+    section.Trips {
+      background-position: 25%;
+      min-height: 50vh;
+    }
+    section.Trips .text-wrapper .section-title {
+      margin-top: 0;
+      font-size: 25px;
+      max-width: 80%;
+    }
+    section.Trips .text-wrapper .section-text {
+      font-size: 16px;
+      max-width: 80%;
+    }
+  }

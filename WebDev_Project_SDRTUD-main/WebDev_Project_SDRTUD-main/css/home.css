@@ -1,0 +1,69 @@
+/* Section Slider */
+section.Slider {
+  padding: 10px;
+  background: url('../img/snowboarding.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+} 
+section.Slider .text-wrapper {
+  max-width: 42%;
+  margin: 3% 0 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.Slider .section-title {
+  font-size: 50px;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow: 0 5px 3px #000;
+}
+section.Slider .section-text {
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 0 5px 3px #000;
+}
+section.Slider .section-small-text {
+  color: #000;
+  margin: auto 5px 0 auto;
+  font-size: 16px;
+  text-shadow: 0 5px 3px #fff;
+}
+@media screen and (max-width: 1024px) {
+  /* Slider section */
+  section.Slider {
+    background-position: 25%;
+    min-height: 70vh;
+  }
+  section.Slider .text-wrapper {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  section.Slider .text-wrapper .section-title {
+    font-size: 30px;
+  }
+  section.Slider .text-wrapper .section-text {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* Slider section */
+  section.Slider {
+    background-position: 25%;
+    min-height: 50vh;
+  }
+  section.Slider .text-wrapper {
+    max-width: 100%;
+  }
+  section.Slider .text-wrapper .section-title {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  section.Slider .text-wrapper .section-text {
+    margin-top: 45%;
+    font-size: 16px;
+  }
+}
