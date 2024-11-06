@@ -1,7 +1,7 @@
 /* Section Slider */
 section.Contact {
     padding: 10px 3%;
-    background: url('../img/contact-background.jpeg') no-repeat;
+    background: url('../img/contact-background.webp') no-repeat;
     background-size: cover;
     min-height: 80vh;
     display: flex;

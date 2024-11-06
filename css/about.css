@@ -1,7 +1,7 @@
 /* Section Slider */
 section.About {
   padding: 10px;
-  background: url('../img/Snowboard_small.jpg') no-repeat;
+  background: url('../img/about-background.webp') no-repeat;
   background-size: cover;
   background-position: 20% 74%;
   min-height: 80vh;

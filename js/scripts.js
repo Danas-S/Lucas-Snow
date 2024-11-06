@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerMenu = document.querySelector('header');
     const mobileMenu = document.querySelector('.mobile-menu');
     const hoverPopup = document.querySelector('.hover-popup');
+    
     // Event Listeners
-
     searchPanelHeader.addEventListener('click', e => {
         searchPopup.classList.add('show');
         document.body.classList.add('popup-opened');
