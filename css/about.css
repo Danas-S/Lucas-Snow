@@ -4,9 +4,13 @@ section.About {
   background: url('../img/about-background.webp') no-repeat;
   background-size: cover;
   background-position: 20% 74%;
+} 
+section.About .about-container {
+  position: relative;
   min-height: 80vh;
   display: flex;
-} 
+  z-index: 1;
+}
 section.About .text-wrapper {
   width: 100%;
   margin: 3% 0 0 10%;

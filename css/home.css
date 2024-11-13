@@ -4,9 +4,13 @@ section.Slider {
   background: url('../img/slider-snowboarding.webp') no-repeat;
   background-size: cover;
   background-position: center;
+} 
+section.Slider .slider-container {
+  position: relative;
   min-height: 80vh;
   display: flex;
-} 
+  z-index: 1;
+}
 section.Slider .text-wrapper {
   max-width: 42%;
   margin: 3% 0 0 auto;

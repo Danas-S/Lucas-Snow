@@ -3,18 +3,20 @@ section.Contact {
     padding: 10px 3%;
     background: url('../img/contact-background.webp') no-repeat;
     background-size: cover;
-    min-height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 } 
+section.Contact .contact-container {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
 section.Contact .text-wrapper {
     margin-top: -10%;
     max-width: 30%;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    z-index: 1;
 }
 section.Contact .section-title {
     font-size: 50px;
