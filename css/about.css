@@ -39,8 +39,8 @@ section.About .section-small-text {
 }
 @media screen and (max-width: 1024px) {
   /* About section */
-  section.About {
-    min-height: 70vh;
+  section.About .about-container {
+    min-height: calc(120vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.About .text-wrapper {
     max-width: 100%;
@@ -59,12 +59,12 @@ section.About .section-small-text {
   /* About section */
   section.About {
     background-position: 25%;
-    min-height: 50vh;
   }
   section.About .text-wrapper .section-title {
     margin-top: 0;
     font-size: 25px;
     max-width: 80%;
+    margin-bottom: 30%;
   }
   section.About .text-wrapper .section-text {
     font-size: 16px;

@@ -39,7 +39,9 @@ section.Slider .section-small-text {
   /* Slider section */
   section.Slider {
     background-position: 25%;
-    min-height: 70vh;
+  }
+  section.Slider .slider-container {
+    min-height: calc(120vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.Slider .text-wrapper {
     max-width: 50%;
@@ -49,15 +51,15 @@ section.Slider .section-small-text {
     font-size: 30px;
   }
   section.Slider .text-wrapper .section-text {
-    margin-top: 30px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 500px) {
   /* Slider section */
   section.Slider {
-    background-position: 25%;
-    min-height: 50vh;
+    background-position: 10%;
+    min-height: calc(70vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.Slider .text-wrapper {
     max-width: 100%;
@@ -67,7 +69,9 @@ section.Slider .section-small-text {
     font-size: 25px;
   }
   section.Slider .text-wrapper .section-text {
-    margin-top: 45%;
-    font-size: 16px;
+    margin-top: auto;
+  }
+  section.Slider .section-small-text {
+    margin-top: 20%;
   }
 }

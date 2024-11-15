@@ -4,9 +4,9 @@ ul {
 }
 section.Trips {
   padding: 10px;
-  background: url("../img/ski_resort.jpg") no-repeat;
+  background: url("../img/ski_resort.webp") no-repeat;
   background-size: cover;
-  background-position: 20% 74%;
+  background-attachment: fixed;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -14,9 +14,21 @@ section.Trips {
   position: relative;
 } 
 section.Trips .section-title {
+  width: fit-content;
   font-size: 50px;
   color: #fff;
-  text-align: center; 
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+section.Trips .section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 35%;
+  right: 0%;
+  height: 4px;
+  background-color: #fff;
 }
 section.Trips .section-text {
   max-width: 45%;
@@ -88,6 +100,15 @@ section.Trips .trip-card-content .trip-description {
   section.Trips {
     min-height: 70vh;
   }
+  section.Trips .section-title {
+    font-size: 45px;
+  }
+  section.Trips .trip-card {
+    width: 100%;
+  }
+  section.Trips .trip-card:hover {
+    transform: none;
+  }
   section.Trips .text-wrapper {
     max-width: 100%;
     margin-right: 20px;
@@ -106,6 +127,9 @@ section.Trips .trip-card-content .trip-description {
     background-position: 25%;
     min-height: 50vh;
   }
+  section.Trips .section-title {
+    font-size: 35px;
+  }
   section.Trips .text-wrapper .section-title {
     margin-top: 0;
     font-size: 25px;
@@ -116,12 +140,10 @@ section.Trips .trip-card-content .trip-description {
   }
   section.Trips .trip-container {
     gap: 20px 0;
-  }
-  section.Trips .trip-card {
-    width: 100%;
+    padding: 0 10px;
   }
   section.Trips .trip-img-block {
-    height: 300px;
+    height: 200px;
   }
   section.Trips .trip-card-content .trip-title {
     font-size: 18px;

@@ -75,8 +75,9 @@ section.Contact .contact-form .contact-button:hover {
 }
 @media screen and (max-width: 1024px) {
     /* Contact section */
-    section.Contact {
-      min-height: 70vh;
+    section.Contact .contact-container { 
+      flex-direction: column;
+      min-height: calc(80vh - var(--mobile-header-height) - var(--mobile-footer-height));
     }
     section.Contact .text-wrapper {
       margin-right: 20px;
@@ -98,8 +99,8 @@ section.Contact .contact-form .contact-button:hover {
       align-items: center;
     }
     section.Contact .text-wrapper {
-        margin-top: 20px;
-        max-width: 70%;
+      margin-top: 20px;
+      max-width: 70%;
     }
     section.Contact .text-wrapper .section-title {
       font-size: 25px;
