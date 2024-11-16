@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchPanelFooter = document.querySelector('footer .search-panel');
     const searchPopup = document.querySelector('.search-popup');
     const searchPopupClose = document.querySelector('.search-popup-close');
-    const headerMenu = document.querySelector('header');
+    const header = document.querySelector('header');
+    const mobileHeader = document.querySelector('.mobile-header');
     const mobileMenu = document.querySelector('.mobile-menu');
     const hoverPopup = document.querySelector('.hover-popup');
     const discountOpen = document.querySelector('.discount-button');
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //Modifiers
     const show = 'show';
+    const hide = 'hide';
     const popupOpened = 'popup-opened';
     
     // Event Listeners
@@ -29,23 +31,24 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.remove(popupOpened);
     });
     mobileMenu.addEventListener('click', e => {
-        if(headerMenu.classList.contains(show)) {
-            headerMenu.classList.remove(show);
+        if(header.classList.contains(show)) {
+            header.classList.remove(show);
             hoverPopup.classList.remove(show);
             document.body.classList.remove(popupOpened);
         } else {
-            headerMenu.classList.add(show);
+            header.classList.add(show);
             hoverPopup.classList.add(show);
             document.body.classList.add(popupOpened);
         }
     });
     hoverPopup.addEventListener('click', e => {
-        if(headerMenu.classList.contains(show)) {
-            headerMenu.classList.remove(show);
+        if(header.classList.contains(show)) {
+            header.classList.remove(show);
         }
         if(mountainJew.classList.contains(show)) {
             mountainJew.classList.remove(show);
             mountainJew.querySelector('audio').pause();
+            mobileHeader.classList.remove(hide);
         }
         hoverPopup.classList.remove(show);
         document.body.classList.remove(popupOpened);
@@ -54,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add(popupOpened);
         e.target.remove();
         hoverPopup.classList.add(show);
+        mobileHeader.classList.add(hide);
         mountainJew.classList.add(show);
         mountainJewAudio.currentTime = 0;
         mountainJewAudio.play();
@@ -61,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mountainJew.addEventListener('click', e => {
         document.body.classList.remove(popupOpened);
         hoverPopup.classList.remove(show);
+        mobileHeader.classList.remove(hide);
         mountainJew.classList.remove(show);
         mountainJew.querySelector('audio').pause();
     });

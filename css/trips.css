@@ -66,6 +66,7 @@ section.Trips .trip-card {
   text-decoration: none;
   color: #000;
   box-sizing: border-box;
+  z-index: 1;
 }
 section.Trips .trip-img-block {
   width: 100%;
