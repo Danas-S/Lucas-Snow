@@ -16,8 +16,9 @@ section.Contact .contact-container {
   z-index: 1;
 }
 section.Contact .text-wrapper {
-    max-width: 30%;
-    z-index: 1;
+  margin-top: -10%;
+  max-width: 30%;
+  z-index: 1;
 }
 section.Contact .section-title {
     font-size: 50px;
@@ -83,6 +84,7 @@ section.Contact .contact-form .contact-button:hover {
     }
     section.Contact .text-wrapper {
       margin-right: 20px;
+      margin-top: 0;
     }
     section.Contact .contact-form {
         margin-top: 30px;

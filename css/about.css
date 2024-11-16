@@ -11,6 +11,7 @@ section.About .about-container {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   z-index: 1;
 }
 section.About .text-wrapper {
