@@ -4,6 +4,8 @@ section.Slider {
   background: url('../img/slider-snowboarding.webp') no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
 } 
 section.Slider .slider-container {
   position: relative;
@@ -32,9 +34,11 @@ section.Slider .section-text {
 }
 section.Slider .section-small-text {
   color: #000;
-  margin: auto 5px 0 auto;
   font-size: 16px;
   text-shadow: 0 5px 3px #fff;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 @media screen and (max-width: 1024px) {
   /* Slider section */

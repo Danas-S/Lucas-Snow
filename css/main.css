@@ -40,7 +40,7 @@ body.popup-opened {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  z-index: 2;
+  z-index: 4;
 }
 .mobile-header .mobile-logo {
   position: relative;
@@ -75,7 +75,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
-  z-index: 2;
+  z-index: 4;
 }
 .links-wrapper,
 .links-wrapper .phone-number,
@@ -470,7 +470,6 @@ footer .links-wrapper {
 @media screen and (max-width:1024px) {
   .mobile-header {
     display: flex;
-    z-index: 3;
   }
   header {
     display: none;

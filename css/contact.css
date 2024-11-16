@@ -3,6 +3,8 @@ section.Contact {
   padding: 10px 3%;
   background: url('../img/contact-background.webp') no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 } 
 section.Contact .contact-container {
   max-width: 1400px;   
@@ -14,9 +16,7 @@ section.Contact .contact-container {
   z-index: 1;
 }
 section.Contact .text-wrapper {
-    margin-top: -10%;
     max-width: 30%;
-    min-height: 100%;
     z-index: 1;
 }
 section.Contact .section-title {
@@ -84,12 +84,23 @@ section.Contact .contact-form .contact-button:hover {
     section.Contact .text-wrapper {
       margin-right: 20px;
     }
+    section.Contact .contact-form {
+        margin-top: 30px;
+    }
     section.Contact .text-wrapper .section-title {
       font-size: 30px;
     }
+    section.Contact .text-wrapper .section-text,
+    section.Contact .contact-form .contact-label {
+      font-size: 16px;
+    }
     section.Contact .text-wrapper .section-text {
       margin-top: 30px;
-      font-size: 16px;
+    }
+    section.Contact .contact-form .contact-button {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -111,13 +122,5 @@ section.Contact .contact-form .contact-button:hover {
     section.Contact .text-wrapper .section-text,
     section.Contact .contact-form .contact-label {
       font-size: 16px;
-    }
-    section.Contact .contact-form {
-        margin-top: 30px;
-    }
-    section.Contact .contact-form .contact-button {
-        width: 100px;
-        height: 40px;
-        font-size: 16px;
     }
   }
