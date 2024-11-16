@@ -7,6 +7,7 @@ section.Slider {
 } 
 section.Slider .slider-container {
   position: relative;
+  max-width: 1400px;   
   min-height: 80vh;
   display: flex;
   z-index: 1;
@@ -41,6 +42,7 @@ section.Slider .section-small-text {
     background-position: 25%;
   }
   section.Slider .slider-container {
+    max-width: 100%;
     min-height: calc(120vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.Slider .text-wrapper {

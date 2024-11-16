@@ -13,6 +13,9 @@ section.Trips {
   padding: 30px 5% 50px;
   position: relative;
 } 
+section.Trips .trips-container {
+  max-width: 1400px;
+}
 section.Trips .section-title {
   width: fit-content;
   font-size: 50px;
@@ -99,6 +102,9 @@ section.Trips .trip-card-content .trip-description {
   /* About section */
   section.Trips {
     min-height: 70vh;
+  }
+  section.Trips .trips-container {
+    max-width: 100%;
   }
   section.Trips .section-title {
     font-size: 45px;

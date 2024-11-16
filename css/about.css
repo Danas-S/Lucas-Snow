@@ -7,6 +7,7 @@ section.About {
 } 
 section.About .about-container {
   position: relative;
+  max-width: 1400px;   
   min-height: 80vh;
   display: flex;
   z-index: 1;
@@ -40,6 +41,7 @@ section.About .section-small-text {
 @media screen and (max-width: 1024px) {
   /* About section */
   section.About .about-container {
+    max-width: 100%;
     min-height: calc(120vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.About .text-wrapper {
