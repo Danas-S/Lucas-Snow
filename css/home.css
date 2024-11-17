@@ -69,6 +69,7 @@ section.Slider .section-small-text {
   }
   section.Slider .text-wrapper {
     max-width: 100%;
+    padding-bottom: 30%;
   }
   section.Slider .text-wrapper .section-title {
     margin-top: 0;

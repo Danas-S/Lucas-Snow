@@ -393,7 +393,7 @@ footer .links-wrapper {
   flex-direction: column;
   align-items: center;
   display: none;
-  z-index: 3;
+  z-index: 4;
 }
 .search-popup.show {
   animation: SearchPopupShow 1.5s;
@@ -487,6 +487,9 @@ footer .links-wrapper {
   .main-header nav ul {
     flex-direction: column;
     align-items: center;
+  }
+  header nav > ul li .nav-link:first-child {
+    padding-left: 30px;
   }
   .main-header .header-title {
     display: none;
