@@ -47,7 +47,8 @@ section.About .section-small-text {
   /* About section */
   section.About .about-container {
     max-width: 100%;
-    min-height: calc(150vh - var(--mobile-header-height) - var(--mobile-footer-height));
+    justify-content: flex-start;
+    min-height: calc(120vh - var(--mobile-header-height) - var(--mobile-footer-height));
   }
   section.About .text-wrapper {
     max-width: 100%;
@@ -71,7 +72,7 @@ section.About .section-small-text {
     margin-top: 0;
     font-size: 25px;
     max-width: 80%;
-    margin-bottom: 30%;
+    margin-bottom: 35%;
   }
   section.About .text-wrapper .section-text {
     font-size: 16px;
