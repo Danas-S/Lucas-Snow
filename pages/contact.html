@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <title>Contact Lucas Snow</title>
+  <title>Contact | Lucas Snow</title>
 </head>
 <body>
   <div class="mobile-header">
@@ -75,16 +75,24 @@
         <h2 class="section-title">Get in Touch</h2>
         <p class="section-text">Have questions or want to join me on my next snowboarding adventure? Fill out the form and I’ll get back to you!</p>     
       </div>
-      <div class="contact-form">
-        <form action="#" method="POST">
+      <div class="contact-form-wrapper">
+        <div class="error-message"></div>
+        <div class="submit-message">
+          <p>Thank you for contacting us.</p>
+          <p>Someone from our team will contact you soon.</p>
+        </div>
+        <form class="contact-form" action="#" method="POST">
           <label class="contact-label" for="name">Name:</label>
-          <input class="contact-input" type="text" id="name" name="name" required>
+          <input class="contact-input" type="text" id="name" name="name" aria-label="name" placeholder="John Wick">
   
           <label class="contact-label" for="email">Email:</label>
-          <input class="contact-input" type="email" id="email" name="email" required>
+          <input class="contact-input" type="email" id="email" name="email" aria-label="email" placeholder="johnwick@baba.yaga">
+
+          <label class="contact-label" for="phone">Phone:</label>
+          <input class="contact-input" type="tel" id="phone" name="phone" aria-label="phone" placeholder="(777) 777-7777">
   
           <label class="contact-label" for="message">Your Message:</label>
-          <textarea class="contact-textarea" id="message" name="message" rows="5" required></textarea>
+          <textarea class="contact-textarea" id="message" name="message" aria-label="message" rows="5" placeholder="..."></textarea>
   
           <input class="contact-button" type="submit" value="Send">
       </form>

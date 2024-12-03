@@ -31,37 +31,54 @@ section.Contact .section-text {
     text-shadow: 0 5px 3px #000;
     line-height: 2;
 }
-section.Contact .contact-form form {
+section.Contact .contact-form-wrapper {
+  max-width: 70%;
+}
+section.Contact .contact-form-wrapper .contact-form {
     display: flex;
     flex-direction: column;
 }
-section.Contact .contact-form .contact-label {
+section.Contact .contact-form-wrapper .contact-form.hide {
+  display: none;
+}
+section.Contact .contact-form-wrapper .contact-label {
     color: #fff;
     margin: 5px 0;
     padding-left: 5px;
     text-shadow: 0 1px 3px #000;
 }
-section.Contact .contact-form .contact-input {
+section.Contact .contact-form-wrapper .contact-input {
     border: none;
+    color: #fff;
+    text-shadow: 0 1px 3px #000;
     border-bottom: 1px solid #000;
     background: transparent;
     padding: 0 0 5px 5px;
     outline: none;
 }
-section.Contact .contact-form .contact-input:focus,
-section.Contact .contact-form .contact-textarea:focus {
+section.Contact .contact-form-wrapper .contact-input::placeholder,
+section.Contact .contact-form-wrapper .contact-textarea::placeholder {
+  color:rgba(255,255,255,0.8);
+  text-shadow: 0 1px 3px #000;
+}
+section.Contact .contact-form-wrapper .contact-input:not(:placeholder-shown) {
+  background: rgba(255,255,255,0.5);
+}
+section.Contact .contact-form-wrapper .contact-input:focus,
+section.Contact .contact-form-wrapper .contact-textarea:focus {
     background: rgba(255,255,255,0.5);
 }
-section.Contact .contact-form .contact-textarea {
+section.Contact .contact-form-wrapper .contact-textarea {
     padding-left: 5px;
     background: transparent;
-    color: #000;
+    color: #fff;
+    text-shadow: 0 1px 3px #000;
     outline: none;
     border: none;
     border-bottom: 1px solid #000;
     transition: 0.2s;
 }
-section.Contact .contact-form .contact-button {
+section.Contact .contact-form-wrapper .contact-button {
     margin-top: 10px;
     background: #000;
     color: #fff;
@@ -71,9 +88,47 @@ section.Contact .contact-form .contact-button {
     width: 140px;
     height: 45px;
 }
-section.Contact .contact-form .contact-button:hover {
+section.Contact .contact-form-wrapper .contact-button:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+/* Error message */
+section.Contact .contact-form-wrapper .error-message {
+  position: relative;
+  padding: 5px 8px;
+  background-color: rgba(255,255,255,0.8);
+}
+section.Contact .contact-form-wrapper .error-message > * {
+  color: #000;
+  font-size: 16px;
+}
+section.Contact .contact-form-wrapper .error-message:empty {
+  display: none;
+}
+section.Contact .contact-form-wrapper .error-message:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 4px;
+  height: 100%;
+  background-color: red;
+}
+/* Submit message */
+section.Contact .contact-form-wrapper .submit-message {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+section.Contact .contact-form-wrapper .submit-message.show {
+  display: flex;
+}
+section.Contact .contact-form-wrapper .submit-message > * {
+  color:#fff;
+  text-shadow: 0 1px 3px #000;
 }
 @media screen and (max-width: 1024px) {
     /* Contact section */
@@ -86,23 +141,27 @@ section.Contact .contact-form .contact-button:hover {
       margin-right: 20px;
       margin-top: 0;
     }
-    section.Contact .contact-form {
+    section.Contact .contact-form-wrapper {
         margin-top: 30px;
     }
     section.Contact .text-wrapper .section-title {
       font-size: 30px;
     }
     section.Contact .text-wrapper .section-text,
-    section.Contact .contact-form .contact-label {
-      font-size: 16px;
+    section.Contact .contact-form-wrapper .contact-label,
+    section.Contact .contact-form-wrapper .error-message,
+    section.Contact .contact-form-wrapper .submit-message,
+    section.Contact .contact-form-wrapper .contact-input::placeholder,
+    section.Contact .contact-form-wrapper .contact-textarea::placeholder  {
+      font-size: 18px;
     }
     section.Contact .text-wrapper .section-text {
       margin-top: 30px;
     }
-    section.Contact .contact-form .contact-button {
+    section.Contact .contact-form-wrapper .contact-button {
         width: 100px;
         height: 40px;
-        font-size: 16px;
+        font-size: 18px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -122,7 +181,12 @@ section.Contact .contact-form .contact-button:hover {
       text-align: center;
     }
     section.Contact .text-wrapper .section-text,
-    section.Contact .contact-form .contact-label {
+    section.Contact .contact-form .contact-label,
+    section.Contact .contact-form-wrapper .error-message,
+    section.Contact .contact-form-wrapper .submit-message,
+    section.Contact .contact-form-wrapper .contact-button,
+    section.Contact .contact-form-wrapper .contact-input::placeholder,
+    section.Contact .contact-form-wrapper .contact-textarea::placeholder {
       font-size: 16px;
     }
   }
