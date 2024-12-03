@@ -1,0 +1,75 @@
+Dear Lucas Snow, 
+
+I hope you’re doing well! 
+
+In response to your request to improve your website and make it more accessible and user-friendly, we added a fully functional contact page. An outline of the changes We have made and how they will help your visitors can be found here: 
+
+Key Features Added to the Contact Page 
+
+Accessible Input titles: 
+
+ 
+
+Titles include Name, Email, and Message, all designed to work seamlessly with screen readers. 
+
+ 
+
+Clear labels and logical tab navigation ensure useability for visually impaired users. 
+
+ 
+
+Responsive and Inclusive Design: 
+
+ 
+
+The form is fully optimized for all device types, ensuring accessibility for users on desktops, tablets, and smartphones. 
+
+ 
+
+Confirmation message: 
+
+ 
+
+After submission, a clear confirmation message is announced and displayed to reassure users their message has been received. 
+
+ 
+
+ 
+
+Data Validation in the Form 
+
+To ensure the form collects accurate and useful information, we have implemented the following validation measures: 
+
+Email Validation: Ensures email addresses follow the correct format (e.g., user@example.com). 
+
+ 
+
+Required Fields: Name, Email, and Message are mandatory, preventing incomplete submissions. 
+
+ 
+
+Real-Time Feedback: Users receive clear, accessible error messages if they make mistakes or leave required fields empty. 
+
+ 
+
+Character Limits: Prevents unnecessarily long inputs in the Subject and Message fields, optimizing clarity. 
+
+ 
+
+These validations ensure that the data you receive is reliable, while remaining easy to use for everyone. 
+
+ 
+
+Link to the Updated Page 
+
+We have deployed the updated version of your site, including the new contact page, on GitHub Pages. You can access it here: 
+
+[Updated Website with Accessible Contact Form] - https://danas-s.github.io/WebDev_Project_SDRTUD/pages/contact.html 
+
+If there are any more features you’d like to see, please let us know. We have designed the new page with accessibility and ease of use as the top priorities, but We are happy to change it further to meet your needs. 
+
+Looking forward to your feedback! 
+
+Warm regards, 
+
+Danas, Ruslan, Stepan 
