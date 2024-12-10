@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let contactEmailInput = null;
     let contactPhoneInput = null;
     let contactMessageInput = null;
+    //If page is Contact proceed
     if(document.title.includes("Contact")) {
         contactForm = document.querySelector('.contact-form');
         contactNameInput = document.querySelector('.contact-form #name');
@@ -45,15 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return serializedData;
     }
-    //Number format
-    function phoneFormat(input) {//returns (###) ###-####
+    //Number formatting
+    function phoneFormat(input) {
         input = input.replace(/\D/g,'');
         const size = input.length;
         if (size>0) {input="("+input}
         if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
         if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
         if (size===10) {input = input.slice(0,13)}
-        console.log(input);
+        //returns (###) ###-####
         return input;
     }
     //Event Listeners
@@ -120,12 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
         formSubmitButton.addEventListener('click', e => {
             e.preventDefault();
             const nameStatus = nameRegex.test(contactNameInput.value);
-            console.log('nameRegex', nameRegex.test(contactNameInput.value));
             const emailStatus = emailRegex.test(contactEmailInput.value);
-            console.log('emailRegex', emailRegex.test(contactEmailInput.value));
             const phoneStatus = phoneRegex.test(contactPhoneInput.value);
-            console.log('contactPhoneInput.value=', contactPhoneInput.value);
-            console.log('phoneRegex', phoneRegex.test(contactPhoneInput.value));
             //Clear Form error field
             contactFormError.textContent = "";
             if (!nameStatus) {

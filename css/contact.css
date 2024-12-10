@@ -1,14 +1,14 @@
 /* Section Slider */
 section.Contact {
-  padding: 10px 3%;
   background: url('../img/contact-background.webp') no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
+  position: relative;
 } 
 section.Contact .contact-container {
   max-width: 1400px;   
-  position: relative;
+  padding: 10px 3%;
   min-height: 80vh;
   display: flex;
   justify-content: space-between;
@@ -30,6 +30,14 @@ section.Contact .section-text {
     color: #fff;
     text-shadow: 0 5px 3px #000;
     line-height: 2;
+}
+section.Contact .section-small-text {
+  color: #000;
+  font-size: 16px;
+  text-shadow: 0 5px 3px #fff;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 section.Contact .contact-form-wrapper {
   max-width: 70%;

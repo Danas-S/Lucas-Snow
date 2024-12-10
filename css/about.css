@@ -4,10 +4,11 @@ section.About {
   background: url('../img/about-background.webp') no-repeat;
   background-size: cover;
   background-position: 20% 72%;
+  position: relative;
 } 
 section.About .about-container {
-  position: relative;
   max-width: 1400px;   
+  width: 100%;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@ section.About .about-container {
 }
 section.About .text-wrapper {
   width: 100%;
-  padding: 3% 0 0 10%;
+  padding: 15% 0 0 10%;
   min-height: 100%;
   height: 100%;
   display: flex;
@@ -39,7 +40,7 @@ section.About .section-small-text {
   font-size: 16px;
   text-shadow: 0 5px 3px #fff;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 5px;
 }
 @media screen and (max-width: 1024px) {
@@ -70,7 +71,7 @@ section.About .section-small-text {
     margin-top: 0;
     font-size: 25px;
     max-width: 80%;
-    margin-bottom: 35%;
+    margin: 25% 0 15%;
   }
   section.About .text-wrapper .section-text {
     font-size: 16px;
